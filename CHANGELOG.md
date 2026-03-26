@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-03-26 (11)
+
+- Reverted warning banner colors back to hardcoded (`#4a7a9a`, `rgba(74,122,154,0.12)`) — these are escape hatches, not theme vars; a broken theme must not hide warnings
+- Updated global `CLAUDE.md` (Section 6 Escape Hatches): added warning banners as a third hardcoded escape hatch
+
 ## 2026-03-26 (10)
 
 - Added `LICENSE` (PolyForm Noncommercial 1.0.0 — matching lora-studio)

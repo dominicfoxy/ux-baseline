@@ -20,7 +20,7 @@ function Divider() { return <div style={{ height: "1px", background: "var(--bord
 function BannerSpecimen({ type }: { type: "info" | "warning" | "danger" }) {
   const styles = {
     info:    { bg: "var(--accent-glow)",  border: "var(--accent-dim)", text: "var(--accent-bright)",  icon: <Info size={13} color="var(--accent-bright)" /> },
-    warning: { bg: "var(--blue-dim)",    border: "var(--blue)",  text: "var(--blue)",                icon: <AlertTriangle size={13} color="var(--blue)" /> },
+    warning: { bg: "rgba(74, 122, 154, 0.12)", border: "#4a7a9a", text: "#4a7a9a",                    icon: <AlertTriangle size={13} color="#4a7a9a" /> },
     danger:  { bg: "var(--red-dim)",      border: "var(--red)",  text: "var(--red-bright)",            icon: <AlertTriangle size={13} color="var(--red-bright)" /> },
   }[type];
 
@@ -93,11 +93,11 @@ export default function OverlaysPage() {
       {liveType && (
         <div style={{
           padding: "10px 28px", flexShrink: 0,
-          background: liveType === "danger" ? "var(--red-dim)" : liveType === "warning" ? "var(--blue-dim)" : "var(--accent-glow)",
-          borderBottom: `1px solid ${liveType === "danger" ? "var(--red)" : liveType === "warning" ? "var(--blue)" : "var(--accent-dim)"}`,
+          background: liveType === "danger" ? "var(--red-dim)" : liveType === "warning" ? "rgba(74, 122, 154, 0.12)" : "var(--accent-glow)",
+          borderBottom: `1px solid ${liveType === "danger" ? "var(--red)" : liveType === "warning" ? "#4a7a9a" : "var(--accent-dim)"}`,
           display: "flex", alignItems: "center", gap: "16px",
         }}>
-          <span style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: liveType === "danger" ? "var(--red-bright)" : liveType === "warning" ? "var(--blue)" : "var(--accent-bright)", flex: 1 }}>
+          <span style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: liveType === "danger" ? "var(--red-bright)" : liveType === "warning" ? "#4a7a9a" : "var(--accent-bright)", flex: 1 }}>
             {liveType === "info" && "Trigger word changed from \"sablefox_v1\" to \"sablefox_v2\". Update 48 existing captions?"}
             {liveType === "warning" && "Forge is unreachable at http://localhost:7860 — check that it's running with the --api flag."}
             {liveType === "danger" && "This will permanently delete 12 images and their captions. This cannot be undone."}
@@ -137,7 +137,7 @@ export default function OverlaysPage() {
                 <button className="btn-ghost" onClick={() => setLiveType("info")} style={{ fontSize: "11px", padding: "5px 14px" }}>
                   Show Info Banner
                 </button>
-                <button className="btn-ghost" onClick={() => setLiveType("warning")} style={{ fontSize: "11px", padding: "5px 14px", borderColor: "var(--blue)", color: "var(--blue)" }}>
+                <button className="btn-ghost" onClick={() => setLiveType("warning")} style={{ fontSize: "11px", padding: "5px 14px", borderColor: "#4a7a9a", color: "#4a7a9a" }}>
                   Show Warning
                 </button>
                 <button className="btn-ghost" onClick={() => setLiveType("danger")} style={{ fontSize: "11px", padding: "5px 14px", borderColor: "var(--red)", color: "var(--red-bright)" }}>
