@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-03-26 — v1.1.0
+
+- Added `icons/icon.png` (512×512) to `bundle.icon` in `tauri.conf.json` — AppImage was not picking up the custom icon because only the smaller PNGs were listed
+
 ## 2026-03-26 (11)
 
 - Reverted warning banner colors back to hardcoded (`#4a7a9a`, `rgba(74,122,154,0.12)`) — these are escape hatches, not theme vars; a broken theme must not hide warnings

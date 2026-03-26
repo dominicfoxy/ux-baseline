@@ -1,7 +1,7 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "UX Baseline",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "identifier": "com.uxbaseline.demo",
   "build": {
     "frontendDist": "../dist",
@@ -33,6 +33,7 @@
       "icons/32x32.png",
       "icons/128x128.png",
       "icons/128x128@2x.png",
+      "icons/icon.png",
       "icons/icon.icns",
       "icons/icon.ico"
     ]
