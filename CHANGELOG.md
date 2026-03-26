@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-03-26 (9)
+
+- Added `icon-source/make_icon.py` — generates 512×512 app icon (Syne ExtraBold, amber "UX" on dark bg, accent-dim baseline rule)
+- Added `icon-source/Syne-ExtraBold.ttf` (downloaded from Google Fonts CDN)
+- Added `icon-source/icon-512.png` — source icon
+- Generated all platform icon variants via `cargo tauri icon`: `.icns`, `.ico`, `.png` (32/64/128/256), Windows Appx tiles, iOS/Android sizes
+
 ## 2026-03-26 (8)
 
 - Deleted template assets: `src/assets/hero.png`, `src/assets/vite.svg`, `public/favicon.svg`, `public/icons.svg` — none were referenced

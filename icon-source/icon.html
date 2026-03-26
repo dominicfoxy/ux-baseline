@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=block" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 512px; height: 512px; overflow: hidden; background: transparent; }
+  .icon {
+    width: 512px;
+    height: 512px;
+    background: #0d0d0e;
+    border-radius: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .letters {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 220px;
+    color: #f0a020;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    user-select: none;
+  }
+  .baseline {
+    position: absolute;
+    bottom: 118px;
+    left: 72px;
+    right: 72px;
+    height: 6px;
+    background: #8a5600;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+  <div class="icon">
+    <span class="letters">UX</span>
+    <div class="baseline"></div>
+  </div>
+</body>
+</html>
