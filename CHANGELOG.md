@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-03-26 (10)
+
+- Added `LICENSE` (PolyForm Noncommercial 1.0.0 — matching lora-studio)
+- Added `--red-bright` (#d47070) and `--blue-dim` (rgba(74,122,154,0.12)) CSS vars to `:root` in `index.css`; replaced all hardcoded instances across `index.css`, `OverlaysPage.tsx`, and `ComponentsPage.tsx`
+- Removed unused `_loadingState` state from `ComponentsPage.tsx`
+- Updated global `CLAUDE.md` (Section 11): every new project gets a PolyForm Noncommercial LICENSE at repo creation
+
 ## 2026-03-26 (9)
 
 - Added `icon-source/make_icon.py` — generates 512×512 app icon (Syne ExtraBold, amber "UX" on dark bg, accent-dim baseline rule)

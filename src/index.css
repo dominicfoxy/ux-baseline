@@ -18,6 +18,8 @@
   --red: #9a4a4a;
   --red-dim: rgba(154, 74, 74, 0.15);
   --blue: #4a7a9a;
+  --blue-dim: rgba(74, 122, 154, 0.12);
+  --red-bright: #d47070;
   --font-display: 'Syne', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
   --font-body: 'Newsreader', serif;
@@ -84,7 +86,7 @@ button:disabled { opacity: 0.35; cursor: not-allowed; }
 .btn-ghost { background: transparent; color: var(--text-secondary); border: 1px solid var(--border); }
 .btn-ghost:hover:not(:disabled) { border-color: var(--accent-dim); color: var(--accent-bright); }
 
-.btn-danger { background: var(--red-dim); color: #d47070; border: 1px solid var(--red); }
+.btn-danger { background: var(--red-dim); color: var(--red-bright); border: 1px solid var(--red); }
 .btn-danger:hover:not(:disabled) { background: var(--red); color: var(--text-primary); }
 
 .tag {

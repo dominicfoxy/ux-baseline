@@ -178,7 +178,6 @@ export default function ComponentsPage() {
   const [steps, setSteps] = useState(20);
   const [cfg, setCfg] = useState(7.0);
   const [dirFieldValue, setDirFieldValue] = useState("");
-  const [_loadingState, _setLoadingState] = useState<"idle" | "loading">("idle");
 
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
@@ -382,7 +381,7 @@ export default function ComponentsPage() {
                   ))}
                   <span className="tag" style={{ background: "var(--accent-glow)", border: "1px solid var(--accent-dim)", color: "var(--accent-bright)" }}>active tag</span>
                   <span className="tag" style={{ background: "var(--green-dim)", border: "1px solid var(--green)", color: "var(--green)" }}>approved</span>
-                  <span className="tag" style={{ background: "var(--red-dim)", border: "1px solid var(--red)", color: "#d47070" }}>rejected</span>
+                  <span className="tag" style={{ background: "var(--red-dim)", border: "1px solid var(--red)", color: "var(--red-bright)" }}>rejected</span>
                 </div>
               </div>
 
